@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -9,19 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-</head>
+  </head>
   <body>
     <nav id="home">
       <h1><i>Moqups</i></h1>
-      <!-- <table>
+      <table>
         <tr>
           <th>Home</th>
           <th>Our Package</th>
           <th>Call Us</th>
         </tr>
-
-      </table> -->
-
+        
+      </table>
+      
       <div class="scrolling-navbar">
         <div class="nav-box">
           <a href="#home">
@@ -41,35 +41,266 @@
       </div>
     </nav>
     <hr/>
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
     <section>
       <div class="section-header">
         <h1><b>Top Rated E-Groceries Shop in Indonesian</b></h1>
         <h3 style="color: gray;">Every Day with best ingredients</h3>
       </div>
     </section>
-
+    
     <div class="container">
       <div>
         
       </div>
       <div>
-
+        
       </div>
     </div>
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+  </html> -->
+  
+  
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>E-Groceries</title>
+      <link rel="stylesheet" href="css/index.css" />
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+      <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+      <header>
+        <div class="logo">
+          <img src="assets/moqups.png" alt="Moqups" class="top-left" />
+          
+        </div>
+        
+        <div class="nav">
+          <div class="nav-item"><a href="#home">Home</a></div>
+          <div class="nav-item nav-center">
+            <a href="#our-package">Our Package</a>
+          </div>
+          <div class="nav-item"><a href="#call-us">Call Us</a></div>
+        </div>
+      </header>
+      
+      <hr class="line"/>
+      <main id="main">
+        <section>
+          <div class="section-header">
+            <h1><strong>Top Rated E-Groceries Shop in Indonesian</strong></h1>
+            <h3 style="color: gray;">Every Day with best ingredients</h3>
+          </div>
+        </section>
+        <section class="main-form">
+          <div class="element">
+            <div class="autoslide">
+              <img src="assets/img1.jpg" class="carousel" />
+              <img src="assets/img2.jpg" class="carousel" />
+              <img src="assets/img3.JPG" class="carousel" />
+            </div> 
+            
+            <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+              
+            function plusDivs(n) {
+              showDivs((slideIndex += n));
+            }
+
+            function showDivs(n) {
+              var i;
+              var imgList = document.getElementsByClassName("carousel");
+              if (n > imgList.length) slideIndex = 1;
+              else if (n < 1) slideIndex = imgList.length;
+
+              for (i = 0; i < imgList.length; i++) {
+                imgList[i].style.display = "none";
+              }
+
+              imgList[slideIndex - 1].style.display = "block";
+            }
+            setInterval(() => {
+              plusDivs(1);
+            }, 1000);
+          </script>
+
+          <i class="dialog">"setiap hari beli sayur buah yang fresh disini"</i>
+          <div class="profile">
+            <img class="pp" src="assets/profile.png" alt="profile" />
+            <div class="isiclass">
+              <p class="profilename">Florence Hughes</p>
+              <i class="profiledesc">Ibu Rumah Tangga, 28</i>
+            </div>
+          </div>
+
+          <hr class="sep">
+          <div>
+            <h3 class="hlist">Use this space to provide users with more information about your offer. Consider 
+              it a follow-up to your headline and explain the benefits of your service or product</h3>
+            <div class="container">
+              <div class="homelist">
+                <div class="bul bul1">1</div>
+                <p class="list list1">Your first feature, written in the form of benefit statement.</p><br>
+              </div>
+              <div class="homelist">
+                <div class="bul bul2">2</div>
+                <p class="list list2">Your second feature, written in the form of a benefit statement.</p><br>
+              </div>
+              <div class="homelist">
+                <div class="bul bul3">3</div>
+                <p class="list list3">Your third feature, written in the form of a benefit statement.</p><br>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="element right">
+          <div class="form">
+            <div class="topform">
+              <div><strong class="formcontact">Contact Us</strong>
+                   <p class="formtext">Sales akan menghubungi anda 1x24<br>jam setelah data kami terima.</p>
+              </div>
+            <label><strong>Your Name:</strong></label><br>
+            <input class="fill" id="name" name="name" class="input" type="text" placeholder="First and last name"/>
+            <br>
+            <label><strong>Email Address:</strong></label><br>
+            <input class="fill" id="email" name="email" class="input" type="text"  placeholder="example@email.com">
+            <br>
+            <label><strong>What are you interested in?</strong></label>
+            <select id="select" name="select" class="fill2" aria-placeholder="Select Option"
+              <option value="" selected>Select an option</option>
+              <option selected>Select Option</option>
+              <option value="option 1">DEMON</option>
+              <option value="option 2">JUPI</option>
+            </select><br>
+
+            <button class="btn">SEND</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="our-package">
+        <div class="ourp">
+          <h1>Our Package</h1>
+        </div>
+        <div class="top">
+          <div class="toptop">
+            <div class="icon-coloumn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb top-icon
+              top-icon" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+              </svg>
+            </div>
+            <div class="hh">
+              <h2 class="topmom">Fresh Vegetable</h2>
+              <h3 class="topkid">Sayuran segar langsung dari sumber pertanian terbaik</h3>
+            </div>
+          </div>
+          <div class="toptop">
+            <div class="icon-coloumn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb top-icon
+              top-icon" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+              </svg>
+            </div>
+            <div class="hh">
+              <h2 class="topmom">Fresh Fruit</h2>
+              <h3 class="topkid">Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</h3>
+            </div>
+          </div>
+          <div class="toptop">
+            <div class="icon-coloumn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb top-icon
+              top-icon" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+              </svg>
+            </div>
+            <div class="hh">
+              <h2 class="topmom">Instant Delivery</h2>
+              <h3 class="topkid">Dikirim instant oleh kurir yang telah di training dengan SOP untuk 
+              mejaga kondisi belanja kamu</h3>
+            </div>
+          </div>
+        </div>
+        <hr class="sep">
+
+
+        <div class="top">
+          <div class="toptop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill top-icon" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <div class="hh">
+              <h2 class="bottommom">Kitchen Ingredient</h2>
+              <h3 class="bottomkid">Bumbu dapur lengkap untuk keperluan memasak kamu</h3>
+            </div>
+          </div>
+          <div class="toptop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill top-icon" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <div class="hh">
+              <h2 class="bottommom">Kitchen Set</h2>
+              <h3 class="bottomkid">Segala jenis alat masak untuk membantu kamu memasak</h3>
+            </div>
+          </div>
+          <div class="toptop">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill top-icon" viewBox="0 0 16 16">
+              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+          <div class="hh">
+            <h2 class="bottommom">Bunding Set</h2>
+            <h3 class="bottomkid">Bingung masak apa? sudah tersedia paket untuk kamu masak di dapur mu</h3>
+          </div>
+        </div>
+      </div>
+     </section>
+     <hr class="line2" />
+      <section id="call-us">
+        <div class="callus">
+          <h1 class="callusmom">Your Closing Argument Headline</h1> 
+          <div class="calluskid">"Success is not final, failure is not fatal: it is the courage to continue that counts.
+          </div>
+          <div class="callact">
+            <a href="https://www.instagram.com/revou_id/" class="btncall">CALL TO ACTION</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <hr class="line2" />
+    <div class="footer">
+      <div class="fbody">
+        <img src="assets/moqups.png" alt="Moqups" class="footerlogo" />
+        <p class="fterms">Terms of  
+          <span class="fspacing"> Service Privacy </span> Policy 
+        <p class="fterms"> &copy;<span class="fspacing"> 2019 Moqups</span></p>
+        </p>
+      </div>
+    </div>
   </body>
 </html>
